@@ -18,7 +18,7 @@ function AverageAgeByOccupation() {
 
     const result = Object.entries(averageAgeByOccupation).map(([occupation, data]) => ({
         occupation,
-        averageAge: (data.totalAge / data.count).toFixed(2) // Làm tròn 2 chữ số thập phân
+        averageAge: (data.totalAge / data.count).toFixed(2)
     }));
 
     return (
