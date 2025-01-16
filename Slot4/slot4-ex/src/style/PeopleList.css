@@ -1,0 +1,25 @@
+.custom-table {
+    border-collapse: collapse;
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(255, 167, 180); /* Hồng phấn */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease; /* Hiệu ứng hover mượt mà */
+  }
+  
+  .custom-table thead th {
+    background-color: rgb(255, 141, 158); /* Màu hồng phấn đậm hơn cho tiêu đề */
+    color: white;
+  }
+  
+  .custom-table tbody tr:hover td {
+    background-color: #fbe7e9; /* Màu khi hover */
+  }
