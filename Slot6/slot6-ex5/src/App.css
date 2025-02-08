@@ -1,0 +1,18 @@
+.navbar-container {
+  background-color: #EACDAD; /* Màu nền giống ảnh */
+  padding: 10px;
+}
+
+.nav-link-custom {
+  color: #e58a41 !important; /* Màu cam */
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-custom i {
+  font-size: 22px;
+}
