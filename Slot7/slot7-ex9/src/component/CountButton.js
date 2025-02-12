@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 
-const CountButton = () => {
-    const [count, setCount] = useState(0);
-  
-    return (
-      <div className="text-center mt-5">
-        <h2>Counter: {count}</h2>
-        <button className="btn btn-success m-2" onClick={() => setCount(count + 1)}>Increment</button>
-        <button className="btn btn-danger m-2" onClick={() => setCount(count - 1)}>Decrement</button>
-      </div>
-    );
-  };
+const CounterDisplay = ({ count }) => (
+  <h2>Counter: {count}</h2>
+);
 
-  export default CountButton;
+const CounterButton = ({ label, onClick, className }) => (
+  <button className={`btn ${className} m-2`} onClick={onClick}>{label}</button>
+);
+
+const CountButton = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="text-center mt-5">
+      <CounterDisplay count={count} />
+      <CounterButton label="Increment" onClick={() => setCount(count + 1)} className="btn-success" />
+      <CounterButton label="Decrement" onClick={() => setCount(count - 1)} className="btn-danger" />
+    </div>
+  );
+};
+
+export default CountButton;
