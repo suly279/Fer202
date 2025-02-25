@@ -1,0 +1,95 @@
+/* 🌈 Nền Gradient động */
+.app-container {
+  background: linear-gradient(135deg, #ffc1cc, #d9a7c7, #a1c4fd);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🎨 Hiệu ứng Gradient Background */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 📦 Box Form */
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* 📌 Tiêu đề */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a0572;
+  margin-bottom: 20px;
+}
+
+/* ✨ Input - Viền phát sáng khi focus */
+.custom-input {
+  border: 2px solid #d9a7c7;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.custom-input:focus {
+  border-color: #a1c4fd;
+  box-shadow: 0 0 10px #a1c4fd;
+}
+
+/* 🚨 Hiển thị lỗi với hiệu ứng fade-in */
+.error-message {
+  font-size: 14px;
+  color: #ff4d6d;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.is-invalid + .error-message {
+  opacity: 1;
+}
+
+/* 🔘 Button Gradient & Hover */
+.gradient-button {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd);
+  background-size: 300% 300%;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.gradient-button:hover {
+  animation: gradientHover 2s infinite;
+  transform: scale(1.05);
+}
+
+/* 🎭 Hiệu ứng hover Gradient */
+@keyframes gradientHover {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🚫 Button bị disable */
+.gradient-button:disabled {
+  background: #d9a7c7;
+  cursor: not-allowed;
+}
