@@ -1,0 +1,63 @@
+/* 🌈 Ứng dụng chung */
+.app-container {
+  background: linear-gradient(135deg, #ffc1cc, #d9a7c7, #a1c4fd);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 📦 Box Form */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 🎨 Dark & Light Mode */
+.theme-container {
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.light-mode {
+  background: #fff;
+  color: #000;
+}
+
+.dark-mode {
+  background: #333;
+  color: #fff;
+}
+
+/* 🔘 Nút Gradient */
+.gradient-button {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+}
+
+/* 📌 Các phần tách biệt */
+.section {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}

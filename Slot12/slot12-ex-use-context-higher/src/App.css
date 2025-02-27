@@ -1,0 +1,92 @@
+/* 🌈 Nền sáng */
+body {
+  background: #f8f9fa;
+  color: #212529;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* 🌙 Nền tối */
+body.dark-mode {
+  background: #121212 !important;
+  color: #ffffff !important;
+}
+
+/* 📦 Box Form */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* 🌙 Dark Mode - Hộp trắng đổi thành xám đậm */
+body.dark-mode .form-container {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* 🌙 Dark Mode - Card món ăn */
+body.dark-mode .card {
+  background: #333;
+  color: white;
+}
+
+body.dark-mode .card-title {
+  color: #ffca28;
+}
+
+/* 🔘 Nút Gradient */
+.gradient-button {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+}
+
+/* 🌙 Dark Mode - Button đổi màu */
+body.dark-mode .gradient-button {
+  background: linear-gradient(45deg, #444, #666, #888);
+}
+
+
+/* 🌙 Dark Mode - Modal */
+body.dark-mode .modal-content {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+  border-color: #444;
+}
+
+/* 🌈 Ảnh trong Card có chiều cao cố định */
+.fixed-image {
+  height: 250px; /* Điều chỉnh chiều cao mong muốn */
+  object-fit: cover; /* Cắt ảnh theo khung mà không bị méo */
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+  border-radius: 8px;
+}
+
+/* 🎯 Ô tìm kiếm */
+.custom-input {
+  border: 2px solid #d9a7c7;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.custom-input:focus {
+  border-color: #a1c4fd;
+  box-shadow: 0 0 10px #a1c4fd;
+}
