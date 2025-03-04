@@ -1,0 +1,228 @@
+/* 🌈 Hiệu ứng nền gradient động */
+body {
+  background: linear-gradient(135deg, #ffc1cc, #d9a7c7, #a1c4fd);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🎯 Container chính */
+.app-container {
+  width: 800px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* 🔘 Nút gradient */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  color: white;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  transform: scale(1.05);
+}
+
+.counter-container {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6a0572;
+}
+
+.form-container {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #d9a7c7;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  border-color: #a1c4fd;
+  box-shadow: 0 0 10px #a1c4fd;
+}
+
+.item-list {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background: #f8f9fa;
+}
+
+/* Điều chỉnh phần Quiz rộng hơn */
+.quiz-container {
+  max-width: 900px; /* Tăng chiều rộng */
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Căn chỉnh câu hỏi */
+.question-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Điều chỉnh nút đáp án */
+.quiz-option {
+  width: 45%; /* Để các nút lớn hơn */
+  padding: 12px;
+  font-size: 18px;
+  margin: 5px;
+  border: 2px solid #ff7eb3;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+  background: #ff7eb3;
+  color: white;
+}
+
+/* Thanh progress bar dài hơn */
+.progress-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 12px;
+  border-radius: 8px;
+}
+
+/* Bộ đếm thời gian */
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Điều chỉnh layout */
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.next-button {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+/* Hiển thị khi hết giờ hoặc chọn sai */
+.feedback {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: red;
+}
+
+/* Định dạng cho các nút câu trả lời */
+.quiz-option {
+  width: 45%;
+  padding: 12px;
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 2px solid #ff7eb3;
+  background: white;
+  color: black;
+}
+
+/* Nút đáp án đúng khi chọn đúng */
+.correct-answer {
+  background-color: #28a745 !important; /* Xanh lá */
+  color: white !important;
+  border-color: #218838 !important;
+}
+
+/* Nút chọn sai */
+.wrong-answer {
+  background-color: #dc3545 !important; /* Đỏ */
+  color: white !important;
+  border-color: #c82333 !important;
+}
+
+/* Khi hết giờ, hiển thị đúng giống sai */
+.time-up-answer {
+  background-color: #ffc107 !important; /* Màu vàng */
+  color: black !important;
+  border-color: #e0a800 !important;
+}
+
+
+
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #6a0572 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background: #ff7eb3;
+  color: white !important;
+  border-radius: 8px;
+}

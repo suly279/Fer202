@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";  
 import "./App.css";
 import UserPosts from "./component/UserPosts";
 import CountdownTimer from "./component/CountdownTimer";
