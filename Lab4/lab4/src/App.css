@@ -1,0 +1,149 @@
+/* 🎨 Tổng thể */
+body {
+  background: linear-gradient(90deg, #f8c4e3, #c2d9ff, #e3c4ff);
+  background-size: 300% 300%;
+  animation: gradientBG 8s infinite alternate;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* 🌈 Hiệu ứng nền chuyển động */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* 📌 Container Quiz */
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(180, 180, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.quiz-container:hover {
+  transform: scale(1.02);
+}
+
+/* 🔥 Hiệu ứng chữ */
+h3, h5 {
+  font-weight: bold;
+  color: #4a4a8e;
+}
+
+/* ⏳ Timer */
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #ffc0cb, #c2d9ff);
+  display: inline-block;
+  color: #4a4a8e;
+  box-shadow: 0px 5px 10px rgba(180, 180, 255, 0.3);
+}
+
+/* 🌟 Nút đáp án */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.quiz-option {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(120deg, #ff99cc, #b0c4ff);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(180, 180, 255, 0.3);
+}
+
+.quiz-option:hover {
+  background: linear-gradient(120deg, #e898ff, #99ccff);
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(180, 180, 255, 0.5);
+}
+
+/* ✅ Đáp án đúng */
+.quiz-option.correct-answer {
+  background: linear-gradient(120deg, #99ffcc, #66cc99);
+  box-shadow: 0px 5px 15px rgba(150, 255, 180, 0.3);
+}
+
+/* ❌ Đáp án sai */
+.quiz-option.wrong-answer {
+  background: linear-gradient(120deg, #ff99aa, #ff6666);
+  box-shadow: 0px 5px 15px rgba(255, 150, 150, 0.3);
+}
+
+/* 📊 Thanh tiến trình */
+.progress-bar {
+  border-radius: 10px;
+  height: 12px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* 💡 Phản hồi đúng/sai */
+.feedback {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* 🌟 Nút Next Question */
+.next-button {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: linear-gradient(120deg, #c2d9ff, #f8c4e3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(180, 180, 255, 0.3);
+}
+
+.next-button:hover {
+  background: linear-gradient(120deg, #e3c4ff, #ffc0cb);
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(180, 180, 255, 0.5);
+}
+
+/* 🏆 Kết thúc Quiz */
+.high-score-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #4a4a8e;
+}
+
+.finish-quiz, .restart-quiz {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: linear-gradient(120deg, #ff99cc, #b0c4ff);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(180, 180, 255, 0.3);
+}
+
+.finish-quiz:hover, .restart-quiz:hover {
+  background: linear-gradient(120deg, #e898ff, #99ccff);
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(180, 180, 255, 0.5);
+}

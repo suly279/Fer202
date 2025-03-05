@@ -88,5 +88,4 @@ function EditableList() {
     </Container>
   );
 }
-
 export default EditableList;
