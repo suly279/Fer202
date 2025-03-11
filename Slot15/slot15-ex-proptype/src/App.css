@@ -1,0 +1,132 @@
+/* 📌 Toàn bộ nền ứng dụng */
+body {
+  background: linear-gradient(to right, #f9f9f9, #ffe0e9);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* 📌 Bố cục App */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 📌 Tiêu đề */
+h1 {
+  font-size: 32px;
+  color: #d63384;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #d63384;
+  margin-top: 30px;
+}
+
+/* 📌 Thẻ card bọc UserProfile */
+.user-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 📌 Hiệu ứng hover cho Card */
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 📌 Văn bản lỗi */
+.error-text {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+
+/* 📌 Container mềm mại */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* 📌 Form input */
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 📌 Khi focus vào input */
+.form-control:focus {
+  border-color: #d63384;
+  box-shadow: 0 0 8px rgba(214, 51, 132, 0.3);
+}
+
+/* 📌 Button mềm mại, có hiệu ứng hover */
+.btn-primary {
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  margin-top: 20px;
+}
+
+/* 📌 Hiệu ứng hover của button */
+.btn-primary:hover {
+  background: linear-gradient(to right, #ff5e9c, #ff3d7f);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 61, 127, 0.3);
+}
+
+/* 📌 Alert mềm mại */
+.alert {
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* 📌 Alert lỗi (màu hồng nhạt) */
+.alert-danger {
+  background: #ffebee;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+/* 📌 Alert thành công (màu xanh pastel) */
+.alert-success {
+  background: #e8f5e9;
+  color: #388e3c;
+  border: 1px solid #388e3c;
+}
+
+/* 📌 Checkbox dễ thương */
+.form-check-input {
+  accent-color: #d63384;
+  transform: scale(1.2);
+}
+
+/* 📌 Label mềm mại */
+.form-label {
+  font-weight: 600;
+  color: #555;
+}
+
+/* 📌 Hiệu ứng khi hover vào input */
+.form-control:hover {
+  background-color: #fff5f8;
+}

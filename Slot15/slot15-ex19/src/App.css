@@ -1,0 +1,24 @@
+/* 📌 Nền ứng dụng */
+body {
+  background: rgb(39, 39, 39);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* 📌 Tiêu đề */
+h1 {
+  font-size: 36px;
+  color: #d63384;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 📌 Grid layout cho danh sách động vật */
+.animal-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}

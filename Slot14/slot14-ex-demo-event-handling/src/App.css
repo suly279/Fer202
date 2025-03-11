@@ -1,0 +1,94 @@
+/* index.css - Phong cách Pastel hồng trắng mơ mộng */
+body {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+h1, h2, h3, h4 {
+  color: #ff66a3;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(255, 150, 180, 0.5);
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+}
+
+/* Button styles pastel */
+.btn-primary, .btn-success, .btn-secondary {
+  background: linear-gradient(90deg, #ff9a9e, #fecfef);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(255, 105, 135, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-secondary:hover {
+  background: linear-gradient(90deg, #fecfef, #ff9a9e);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(255, 105, 135, 0.6);
+}
+
+/* Dropdown menu pastel */
+.dropdown-menu {
+  background-color: #fff0f6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 150, 180, 0.4);
+  padding: 5px 0;
+}
+
+.dropdown-item {
+  color: #ff66a3;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #ffb3d1;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* Radio button custom pastel */
+.form-check-input:checked {
+  background-color: #ff9ab3;
+  border-color: #ff9ab3;
+  box-shadow: 0 0 5px #ff9ab3;
+}
+
+.alert {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(255, 105, 135, 0.3);
+  background-color: #fff0f6;
+  color: #ff66a3;
+}
+
+.modal-content {
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff, #ffe6f0);
+  box-shadow: 0 8px 15px rgba(255, 105, 135, 0.3);
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #ff66a3;
+}
+
+.modal-body {
+  color: #555;
+}

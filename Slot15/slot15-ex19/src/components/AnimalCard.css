@@ -1,0 +1,54 @@
+/* 📌 Thẻ card động vật */
+.animal-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* 📌 Hiệu ứng hover */
+  .animal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📌 Ảnh trên card */
+  .animal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* 📌 Phần thân card */
+  .animal-card .card-body {
+    background: #ffc107;
+    padding: 15px;
+  }
+  
+  /* 📌 Tên động vật */
+  .animal-name {
+    color: #d63384;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* 📌 Nút More Info */
+  .animal-card button {
+    background: #dc3545;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 📌 Hiệu ứng hover cho nút */
+  .animal-card button:hover {
+    background: #c82333;
+    transform: scale(1.05);
+  }
+  

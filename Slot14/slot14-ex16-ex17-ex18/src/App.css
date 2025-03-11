@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #ffdde1, #ffffff);
+  margin: 0;
+  padding: 40px;
+}
+
+.App {
+  width: 600px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ff85a2;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  color: #ff9ab8;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  display: inline-block;
+  margin: 10px auto;
+  background: linear-gradient(135deg, #ff9bbf, #ff71a3);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff69b4, #ff4791);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(255, 69, 145, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 69, 145, 0.4);
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ff85a2;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ff3c7e;
+}
