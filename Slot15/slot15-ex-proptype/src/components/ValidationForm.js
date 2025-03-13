@@ -95,7 +95,8 @@ const ValidationForm = ({ onSubmit }) => {
         </Form.Group>
 
         <Form.Group controlId="formTerms" style={{textAlign: "left"}}>
-          <Form.Check type="checkbox" name="termsAccepted" label="Tôi đồng ý với điều khoản" checked={formData.termsAccepted} onChange={handleChange} isInvalid={!!errors.termsAccepted} />
+          <Form.Check type="checkbox" name="termsAccepted" label="Tôi đồng ý với điều khoản" 
+          checked={formData.termsAccepted} onChange={handleChange} isInvalid={!!errors.termsAccepted} />
           <Form.Control.Feedback type="invalid">{errors.termsAccepted}</Form.Control.Feedback>
         </Form.Group>
 

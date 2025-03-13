@@ -1,0 +1,72 @@
+/* 🌸 Background gradient MƯỢT MÀ hơn */
+body {
+  background: linear-gradient(135deg, #fe8084 0%, #ffdad0 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #5a5a5a;
+}
+
+/* 🌸 Container mềm mại */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* 🌸 Navbar màu hồng dễ nhìn */
+.navbar {
+  background: linear-gradient(135deg, #fe8084, #ffdad0) !important;
+  border-radius: 12px;
+}
+
+.navbar-brand, .nav-link {
+  color: #FF6DC6 !important;
+  font-weight: bold;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: #fcbad4 !important;
+  transition: 0.3s;
+}
+
+/* 🌸 Card bài viết */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  background: linear-gradient(135deg, #ffdad0, #ff97b1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+}
+
+/* 🌸 Button gradient dễ thương */
+.btn-primary {
+  background: linear-gradient(135deg, #FF6DC6, #ff7eb3);
+  border: none;
+  color: #FF6DC6;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ff7eb3, #FF6DC6);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+/* 🌸 Hiệu ứng input */
+input:focus, textarea:focus {
+  border-color: #ff758c !important;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.3) !important;
+}
+
+/* 🌸 Tiêu đề đẹp hơn */
+h1, h2 {
+  font-weight: bold;
+  color: #d63384;
+  text-shadow: 2px 2px 10px rgba(255, 105, 180, 0.3);
+}
