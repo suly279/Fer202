@@ -1,0 +1,39 @@
+[
+  {
+    "id": 0,
+    "name": "Uthappizza",
+    "description": "Indian pancake + pizza",
+    "image": "/images/uthappizza.jpg",
+    "category": "mains",
+    "price": "4.99",
+    "detail": "A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer."
+  },
+  {
+    "id": 1,
+    "name": "Zucchipakoda",
+    "description": "Deep-fried Zucchini",
+    "image": "/images/zucchipakoda.jpg",
+    "category": "appetizer",
+    "price": "1.99",
+    "detail": "Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce"
+  },
+  {
+    "id": 2,
+    "name": "Vadonut",
+    "description": "Vada or Donut",
+    "image": "/images/vadonut.jpg",
+    "category": "appetizer",
+    "price": "1.99",
+    "detail": "A quintessential ConFusion experience, is it a vada or is it a donut?"
+  },
+  {
+    "id": 3,
+    "name": "ElaiCheese Cake",
+    "description": "New York Style Cheesecake",
+    "image": "/images/elaicheesecake.jpg",
+    "category": "dessert",
+    "price": "2.99",
+    "detail": "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms"
+  }
+]
+  
