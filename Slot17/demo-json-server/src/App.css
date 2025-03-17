@@ -1,0 +1,204 @@
+/* src/styles.css */
+
+/* Reset và thiết lập nền */
+body {
+  background-color: #ffe6e6; /* Hồng nhạt */
+  font-family: "Arial", sans-serif;
+  color: #333; /* Màu chữ xám đậm */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container chính */
+.container {
+  background-color: #ffffff; /* Trắng */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 102, 102, 0.2); /* Bóng hồng nhẹ */
+  padding: 30px;
+  margin-top: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Nâng lên nhẹ khi hover */
+  box-shadow: 0 8px 20px rgba(255, 102, 102, 0.3); /* Bóng đậm hơn */
+}
+
+/* Tiêu đề */
+h1 {
+  color: #ff6666; /* Hồng đậm */
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255, 102, 102, 0.2);
+}
+
+/* Form */
+.form-control {
+  border: 2px solid #ff9999; /* Viền hồng */
+  border-radius: 10px;
+  padding: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ff6666; /* Viền hồng đậm khi focus */
+  box-shadow: 0 0 8px rgba(255, 102, 102, 0.3);
+  outline: none;
+}
+
+.form-label {
+  color: #ff6666; /* Màu chữ label hồng */
+  font-weight: 500;
+}
+
+/* Button */
+.btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff9999; /* Hồng nhạt */
+  border: none;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #ff6666; /* Hồng đậm hơn khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ */
+  box-shadow: 0 4px 10px rgba(255, 102, 102, 0.3);
+}
+
+.btn-success {
+  background-color: #ff9999; /* Hồng nhạt */
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #ff6666; /* Hồng đậm hơn */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 102, 102, 0.3);
+}
+
+.btn-danger {
+  background-color: #ff6666; /* Hồng đậm */
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #ff3333; /* Đỏ hồng đậm hơn */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 51, 51, 0.3);
+}
+
+.btn-secondary {
+  background-color: #ffcccc; /* Hồng rất nhạt */
+  color: #ff6666;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #ff9999; /* Hồng nhạt hơn */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 102, 102, 0.3);
+}
+
+/* ListGroup (danh sách bài viết) */
+.list-group-item {
+  background-color: #fff5f5; /* Nền hồng rất nhạt */
+  border: 1px solid #ffcccc; /* Viền hồng nhạt */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #ffe6e6; /* Nền hồng nhạt hơn khi hover */
+  transform: translateY(-3px); /* Nâng lên nhẹ */
+  box-shadow: 0 4px 10px rgba(255, 102, 102, 0.2);
+}
+
+.list-group-item h3 {
+  color: #ff6666; /* Tiêu đề bài viết hồng đậm */
+  font-weight: 500;
+}
+
+.list-group-item p {
+  color: #666; /* Nội dung xám nhẹ */
+}
+
+/* Link trong ListGroup */
+.list-group-item a {
+  color: #ff9999; /* Link hồng nhạt */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list-group-item a:hover {
+  color: #ff6666; /* Link hồng đậm khi hover */
+  text-decoration: underline;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #fff5f5; /* Nền hồng rất nhạt */
+  border: 2px solid #ffcccc; /* Viền hồng nhạt */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 102, 102, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid #ffcccc;
+}
+
+.modal-title {
+  color: #ff6666; /* Tiêu đề modal hồng đậm */
+}
+
+.modal-body {
+  color: #666;
+}
+
+.modal-footer {
+  border-top: 1px solid #ffcccc;
+}
+
+/* Alert */
+.alert {
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.alert-success {
+  background-color: #ffcccc; /* Nền hồng nhạt */
+  color: #ff6666;
+  border-color: #ff9999;
+}
+
+.alert-danger {
+  background-color: #ff9999; /* Nền hồng đậm hơn */
+  color: #ffffff;
+  border-color: #ff6666;
+}
+
+/* Hiệu ứng bồng bềnh cho các phần tử */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container,
+.list-group-item,
+.btn {
+  animation: float 3s ease-in-out infinite;
+}
